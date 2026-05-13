@@ -1,0 +1,131 @@
+
+
+
+
+
+/* SIDEBAR */
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background: hwb(222 9% 64%);
+  color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-decoration:none;
+}
+
+.sidebar li {
+  list-style: none;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  font-size:1.5rem;
+  /* border:2px solid black; */
+}
+.sidebar a:hover {
+  color: #60a5fa;
+}
+
+.sidebar h2{
+  font-size:2.5rem;
+  margin-top:0px;
+}
+/* MOBILE SIDEBAR */
+.sidebar.mobile {
+  transform: translateX(-100%);
+  z-index: 1000;
+}
+
+.sidebar.mobile.open {
+  transform: translateX(0);
+}
+.sidebar-style{
+  padding:10px;
+  border-radius:5px;
+  transition: background-color 0.3s ease;
+ 
+  
+  color:white;
+  
+  font-size:28px;
+
+} 
+/* TOPBAR */
+.topbar {
+  position: fixed;
+  left: 240px;
+  top: 0;
+  right: 0;
+  height: 60px;
+  background: rgb(188, 190, 190);
+  border-bottom: 1px solid #eee;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* HAMBURGER */
+.hamburger {
+  font-size: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* MAIN */
+.main {
+  margin-left: 240px;
+  padding: 20px;
+}
+
+/* OVERLAY */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  z-index: 900;
+}
+
+
+
+/* tablet */
+@media (min-width: 768px)and (max-width: 1024px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  /* .topbar {
+    left: 200px;
+  } */
+
+  /* .main {
+    margin-left: 200px;
+  } */
+}
+
+/* 📱 MOBILE */
+@media (max-width: 500px) {
+  .topbar {
+    left: 0;
+  }
+
+  .main {
+    margin-left: 0;
+  }
+}

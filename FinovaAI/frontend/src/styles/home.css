@@ -1,0 +1,18 @@
+.navbar{
+    background-color: rgb(107, 89, 77);
+    margin: 0px;
+    padding: 0px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    background-color: rgb(188, 190, 190);
+}
+
+.navElement{
+    margin-right:80px;
+    font-weight: bold;
+    text-decoration: none;
+}

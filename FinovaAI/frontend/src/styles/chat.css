@@ -1,0 +1,27 @@
+.chat-background{
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.chat-back{
+  background-color: #5a5aee;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+.chat-button{
+    /* padding:20px; */
+     width:100%;
+     height:40px;
+     margin-top:10px;
+     
+}
+.chat-buttons{
+    background-color: grey;
+    width:14.5%;
+}
+
+.chat-input{
+    
+    width:80%;
+}

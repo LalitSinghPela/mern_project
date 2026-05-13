@@ -1,0 +1,155 @@
+
+
+/* desktop */
+.expense-form{
+    background: white;
+    
+    border-radius: 10px;
+}
+
+.expense-list{
+  background: white;
+    margin-top: 15px;
+    border-radius: 10px;
+ 
+}
+
+.expense-lists{
+  
+  display:flex;
+  border:2px solid #eee;
+
+  
+
+}
+.expense-box{
+  display:flex;
+ 
+
+}
+.expense-date{
+  
+  width:10vh;
+}
+
+.charts-box{
+  background-color: #f0eded;
+  border-radius: 10px;
+}
+
+ /* income css */
+.income-lists{
+  display:flex;
+}
+.income-list{
+  display:flex;
+}
+.income-element{
+  margin-left:10%;
+  width:10vh;
+}
+.income-list ,.income-element{
+  width:15vw;
+  /* padding-left:2vw; */
+}
+.income-color{
+  background-color:white;
+  border-radius: 10px;
+}
+
+
+
+/* tablet */
+  @media (min-width:760px) and (max-width: 1020px) {
+     /* dashboard */
+    .charts-box{
+      width: 65vw;
+}
+/* .calender{
+  padding-left:10px;
+}  */
+
+.expense-form{
+    background: white;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width:60vw;
+}
+
+.expense-list{
+  background: white;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.expense-lists{
+  /* margin-top:10px */
+  display:flex;
+  border:2px solid #eee;
+
+  
+
+}
+.expense-box{
+  display:flex;
+ 
+
+}
+.expense-date{
+  padding-left:20vh;
+  width:20vh;
+}
+
+.expense-btn{
+ 
+  
+  margin-left:190px;
+  border-radius:5px;
+  width:30vh;
+}
+.income-lists{
+  display:flex;
+}
+.income-list{
+  display:flex;
+}
+.income-element{
+  margin-left:25px;
+  /* width:200px; */
+}
+.income-list,.income-element{
+  width:18vw;
+}
+.income-color{
+  background-color:white;
+  border-radius: 10px;
+  width:65vw;
+}
+}
+
+
+/*  mobile*/
+@media (max-width: 700px) {
+ /* income css */
+.income-lists{
+  display:flex;
+}
+.income-list{
+  display:flex;
+}
+.income-element{
+  margin-left:10%;
+  width:10vh;
+}
+ /* .income-list , .income-element{
+  width:35vw;
+  
+} */
+.income-color{
+  background-color:white;
+  border-radius: 10px;
+}
+}
+

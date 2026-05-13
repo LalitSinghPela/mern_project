@@ -1,0 +1,207 @@
+ .index-title {
+    padding-left:35vw;
+    font-size: 6rem;
+    
+
+  }
+  .index-page {
+    margin-left:33vw;
+    background-color: rgb(74, 74, 156);
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    width: 33vw;
+  }
+  .landing-page{
+    font-size: 3rem;
+    padding:1rem 10rem; 
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    color:white;
+    
+
+}
+
+/* .login-style{
+   background-color: rgb(100, 103, 146);
+    display: flex;
+    width: 30vw;
+    flex-direction: column;
+    margin-left: 35vw;
+    margin-top: 20vh;
+    padding-left:1vw;
+    padding-right:1vw;
+   border-radius : 10px;
+    
+}
+
+.login-style1{
+  text-align: center;
+  padding-top:2vh;
+}
+.login-style2{
+  margin-top:15px;
+  
+} */
+ .login-style{
+   background-color: rgb(100, 103, 146);
+    display: flex;
+    width: 40vw;
+    flex-direction: column;
+  margin-top: 15vh;
+    margin-left: 28vw;
+    padding-left:1vw;
+    padding-right:1vw;
+   border-radius : 10px;
+    
+}
+
+ .login-style1{
+  text-align: center;
+  padding-top:2vh;
+} 
+.login-style2{
+  margin-top:30px;
+  
+} 
+.login-style h2,p,input,button{
+  /* color:green; */
+ height:5vh;
+ border-radius:7px;
+ padding-top:0px;
+ 
+}
+.login-style p{
+margin-buttom:0px;
+
+}
+
+
+/* signup */
+.signup-style{
+    display: flex;
+    flex-direction: column;
+    background: rgb(100, 103, 146);
+    width: 40vw;
+    margin-top: 15vh;
+    margin-left: 28vw;
+    padding-left:2vw;
+    padding-right:2vw;
+    text-align:center;
+     border-radius:10px;
+}
+.signup-style input,button{
+  /* color:green; */
+  margin-bottom:5vh;
+  height:5vh;
+  border-radius:5px;
+}
+
+
+@media  (min-width: 800px) and (max-width: 1024px) {
+    
+ .index-title {
+    padding-left:26vw;
+    font-size: 6rem;
+    
+
+  }
+  .index-page {
+    margin-left:30vw;
+    margin-top:10vh;
+    background-color: rgb(74, 74, 156);
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+  }
+   .landing-page{
+    font-size: 5rem;
+    padding-left:80px; 
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    color:white;
+
+}
+.login-style{
+   background-color: rgb(100, 103, 146);
+    display: flex;
+    width: 81vw;
+    flex-direction: column;
+  margin-top: 15vh;
+    margin-left: 7.5vw;
+    padding-left:1vw;
+    padding-right:1vw;
+   border-radius : 10px;
+    
+}
+.signup-style{
+    display: flex;
+    flex-direction: column;
+    background: rgb(100, 103, 146);
+    width: 81vw;
+    margin-top: 15vh;
+    margin-left: 7.5vw;
+    padding-left:2vw;
+    padding-right:2vw;
+    text-align:center;
+     border-radius:10px;
+}
+}
+
+@media (max-width: 720px) {
+ .index-title {
+    padding-left:18vw;
+    font-size: 4rem;
+    
+
+  }
+  .index-page {
+    margin-left:30vw;
+    margin-top:10vh;
+    background-color: rgb(74, 74, 156);
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+  }
+   .landing-page{
+    font-size: 3rem;
+    padding:0px; 
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    color:white;
+
+}
+.login-style{
+   background-color: rgb(100, 103, 146);
+    display: flex;
+    width: 80vw;
+    flex-direction: column;
+  margin-top: 15vh;
+    margin-left: 7.5vw;
+    padding-left:1vw;
+    padding-right:1vw;
+   border-radius : 10px;
+    
+}
+.signup-style{
+    display: flex;
+    flex-direction: column;
+    background: rgb(100, 103, 146);
+    width: 80vw;
+    margin-top: 15vh;
+    margin-left: 7.5vw;
+    padding-left:2vw;
+    padding-right:2vw;
+    text-align:center;
+     border-radius:10px;
+}
+}
+
