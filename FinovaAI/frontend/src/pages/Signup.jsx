@@ -1,34 +1,6 @@
-// import { useState } from "react";
-// import { API } from "../services/api";
-// // import { signupUser } from "../services/api";
-// import { useNavigate } from "react-router-dom";
-
-// export default function Signup() {
-//   const [name, setName] = useState("");
-//   const [email,setEmail]=useState("");
-//   const [password,setPassword]=useState("");
-//   const nav = useNavigate();
-
-//   const signup = async () => {
-//     await API.post("/auth/signup", {email, password });
-//     nav("/");
-//   };
-  
-
-//   return (
-//     <div className="p-6">
-//       <h2>Signup</h2>
-//       <input onChange={(e)=>setEmail(e.target.value)} placeholder="Email" className="border p-2 block mb-2"/>
-//       <input type="password" onChange={(e)=>setPassword(e.target.value)} placeholder="Password" className="border p-2 block mb-2"/>
-//       <button onClick={signup} className="bg-green-500 text-white p-2">Signup</button>
-//     </div>
-    
-//   );
-  
-// }
 
 import { useState } from "react";
-import { API } from "../services/api";
+import { API } from "../services/Api";
 import { useNavigate } from "react-router-dom";
 
 export default function Signup() {

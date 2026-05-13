@@ -19,11 +19,7 @@ export default function AIChat() {
     setLoading(true);
 
     try {
-      // const res = await sendMessage({
-      //   message: input,
-      //   history: messages,
-        
-      // });
+     
       const userId = localStorage.getItem("userId");
 
 const res = await sendMessage({

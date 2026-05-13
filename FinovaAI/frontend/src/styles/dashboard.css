@@ -30,12 +30,7 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
 }
- /* .card {
-  background: #7f4646;
-  padding: 15px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}  */
+ 
 
  .card p {
   color: #a22a2a;
@@ -49,10 +44,7 @@
   
 }
 
-/* .card.green h2 { color: #22c55e; }
-.card.red h2 { color: #ef4444; }
-.card.blue h2 { color: #3b82f6; }
-.card.purple h2 { color: #a855f7; }  */
+
 
 /* 📊 CHART SECTION */
 .charts {

@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from "react";
-import { API } from "../services/api";
+import { API } from "../services/Api";
 import Layout from "../components/Layout";
 import "../styles/expense.css";
 

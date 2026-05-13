@@ -1,33 +1,4 @@
-// const express = require("express");
-// const router = express.Router();
-// const User = require("../models/User");
 
-// // ✅ Update Profile
-// router.put("/update-profile", async (req, res) => {
-//   try {
-//     const { userId, name, email, password } = req.body;
-
-//     const user = await User.findById(userId);
-
-//     if (!user) {
-//       return res.status(404).json({ message: "User not found" });
-//     }
-
-//     user.name = name || user.name;
-//     user.email = email || user.email;
-
-//     if (password) {
-//       user.password = password; // ⚠️ later hash it
-//     }
-
-//     await user.save();
-
-//     res.json({ message: "Profile updated", user });
-
-//   } catch (error) {
-//     res.status(500).json({ error: "Update failed" });
-//   }
-// });
 
 // module.exports = router;
 const express = require("express");

@@ -14,9 +14,6 @@ export default function Navbar() {
       <Link className="navElement" to="/signup">Signup</Link>
     </div>
 
-   
-
-
   );
   
 }

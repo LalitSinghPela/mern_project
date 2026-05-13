@@ -1,24 +1,6 @@
-// import Sidebar from "./Sidebar";
-// import Topbar from "./Topbar";
-
-// export default function Layout({ children }) {
-//   return (
-//     <div className="layout">
-
-//       <Sidebar />
-//       <Topbar />
-
-//       <div className="main">
-//         {children}
-//       </div>
-
-//     </div>
-//   );
-// }
 import { useState, useEffect } from "react";
 import Sidebar from "./Sidebar";
 import Topbar from "./Topbar";
-// import { useLocation } from "react-router-dom";
 import "../styles/layout.css";
 
 export default function Layout({ children }) {

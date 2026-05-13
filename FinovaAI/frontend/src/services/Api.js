@@ -1,37 +1,9 @@
-// import axios from "axios";
 
-// export const API = axios.create({
-//   baseURL: "http://localhost:5000/api"
-// });
-
-// export const getAIInsights = (data) =>
-//   API.post("/ai/insights", data);
-
-// export const sendMessage = (data) =>
-//   API.post("/ai/chat", data);
-
-
-// // API.interceptors.request.use((req) => {
-// //   const token = localStorage.getItem("token");
-// //   if (token) req.headers.Authorization = `Bearer ${token}`;
-// //   return req;
-// // });
-// API.interceptors.request.use((req) => {
-//   const token = localStorage.getItem("token");
-  
-
-
-//   if (token) {
-//     req.headers.authorization = token; // ✅ IMPORTANT
-//   }
-
-//   return req;
-// });
 
 import axios from "axios";
 
 export const API = axios.create({
-  baseURL: "http://localhost:5000/api"
+baseURL: import.meta.env.VITE_API_URL
 });
 
 // ✅ Interceptor FIXED
@@ -58,5 +30,4 @@ export const updateProfile = (data) =>
 export const getProfile = (email) =>
   API.get(`/user/profile/${email}`);
 
-// export const getProfile = (email) =>
-//   API.get("/user/profile", { params: { email } });
+

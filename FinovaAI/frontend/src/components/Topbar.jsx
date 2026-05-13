@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 const username = localStorage.getItem("name") || "U";
 import "../styles/dashboard.css";
-// localStorage.setItem("name", res.data.user.name);
+
 
 export default function Topbar({ isMobile, setOpen }) {
   const location = useLocation();
@@ -49,9 +49,7 @@ export default function Topbar({ isMobile, setOpen }) {
   {getPageTitle()}
 </h1>
 
-      {/* <div className="profile">
-        <img src="https://i.pravatar.cc/40" alt="profile" />
-      </div> */}
+    
       <Link to="/profile">
 
   <div className="topbar-icon w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center font-bold cursor-pointer">

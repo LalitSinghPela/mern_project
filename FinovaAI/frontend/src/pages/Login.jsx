@@ -1,7 +1,7 @@
 
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { API } from "../services/api";
+import { API } from "../services/Api";
 import "../styles/login.css";
 
 
@@ -11,16 +11,7 @@ export default function Login() {
   const [password,setPassword] = useState("");
   const nav = useNavigate();
 
-//   const login = async () => {
-//     const res = await API.post("/auth/login",{ email,password });
-//     localStorage.setItem("token", res.data.token);
-   
-//     localStorage.setItem(
-//   "name",
-//   res.data.user?.name || "User"
-// );
-//     nav("/dashboard");
-//   };
+
 
 const login = async () => {
 

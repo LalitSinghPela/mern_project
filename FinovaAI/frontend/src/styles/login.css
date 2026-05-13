@@ -24,27 +24,7 @@
 
 }
 
-/* .login-style{
-   background-color: rgb(100, 103, 146);
-    display: flex;
-    width: 30vw;
-    flex-direction: column;
-    margin-left: 35vw;
-    margin-top: 20vh;
-    padding-left:1vw;
-    padding-right:1vw;
-   border-radius : 10px;
-    
-}
 
-.login-style1{
-  text-align: center;
-  padding-top:2vh;
-}
-.login-style2{
-  margin-top:15px;
-  
-} */
  .login-style{
    background-color: rgb(100, 103, 146);
     display: flex;

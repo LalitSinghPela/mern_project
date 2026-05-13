@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { API } from "../services/api";
+import { API } from "../services/Api";
 import Layout from "../components/Layout";
 import "../styles/dashboard.css";
 
@@ -129,11 +129,7 @@ const getTrendData = () => {
 
       {/* 🔥 STATUS CARDS */}
       <div className=" cards grid md:grid-cols-4 gap-4">
-          {/* <Card className="card-colors green card  " title="Total Income" value={`₹${totalIncome}`} color="green" />
-        <Card className="card-colors red card  " title="Total Expense" value={`₹${totalExpense}`} color="red" />
-        <Card className="card-colors blue card " title="Balance" value={`₹${balance}`} color="blue" />
-        <Card className="card-colors purple card "  title="Saving Rate" value={`${savingRate}%`} color="purple" /> 
-          */}
+         
         <Card title="Total Income" value={`₹${totalIncome}`} />
         <Card title="Total Expense" value={`₹${totalExpense}`} />
         <Card title="Balance" value={`₹${balance}`} />
@@ -231,22 +227,7 @@ const getTrendData = () => {
         <div className=" transactions bg-white p-4 rounded-xl shadow">
           <h2 className="font-bold mb-3">Recent Transactions</h2>
 
-          {/* {recentTransactions.map((t, i) => (
-            <div key={i} className="flex justify-between border-b py-2">
-              <div>
-                <p>{t.category || t.source}</p>
-                <p className="text-xs text-gray-400">
-                  {new Date(t.date).toLocaleDateString()}
-                </p>
-              </div>
-
-              <p className={
-                t.type === "income" ? "text-green-500" : "text-red-500"
-              }>
-                ₹{t.amount}
-              </p>
-            </div>
-          ))} */}
+        
           <div className="overflow-x-auto">
 
   <table className="w-full border-collapse">
@@ -342,25 +323,7 @@ const getTrendData = () => {
 }
 
 // 🔥 Card Component
-// function Card({ title, value, color }) {
-//   const colors = {
-//     green: "text-green-500",
-//     red: "text-red-500",
-//     blue: "text-blue-500",
-//     purple: "text-purple-500"
-//   };
 
-//   return (
-   
-    
-//   <div className=" bg-white p-6 rounded-2xl shadow-md border border-gray-200 hover:shadow-xl transition duration-300">
-//       <p className="text-gray-500">{title}</p>
-//       <h2 className={`text-2xl font-bold ${colors[color]}`}>
-//         {value}
-//       </h2>
-//    </div>
-//   );
-// }
 function Card({ title, value, color }) {
 
   return (

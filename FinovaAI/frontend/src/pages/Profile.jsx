@@ -1,85 +1,4 @@
-// import { useState } from "react";
-// import Layout from "../components/Layout";
-// import "../styles/profile.css";
 
-// export default function Profile() {
-//   const [user, setUser] = useState({
-//     name: "John Doe",
-//     email: "john@example.com",
-//   });
-
-//   const [form, setForm] = useState(user);
-
-//   const handleChange = (e) => {
-//     setForm({ ...form, [e.target.name]: e.target.value });
-//   };
-
-//   const handleUpdate = () => {
-//     // 🔥 connect to backend later
-//     setUser(form);
-//     alert("Profile updated!");
-//   };
-
-//   return (
-//     <Layout>
-//       <div className="profile-page">
-
-//         {/* LEFT SECTION */}
-//         <div className="profile-card">
-//           <img
-//             src="https://i.pravatar.cc/150"
-//             alt="avatar"
-//             className="avatar"
-//           />
-
-//           <h2>{user.name}</h2>
-//           <p>{user.email}</p>
-
-//           <button className="btn-outline">Change Photo</button>
-//         </div>
-
-//         {/* RIGHT SECTION */}
-//         <div className="profile-form">
-
-//           <h2>Edit Profile</h2>
-
-//           <input
-//             type="text"
-//             name="name"
-//             value={form.name}
-//             onChange={handleChange}
-//             placeholder="Name"
-//           />
-
-//           <input
-//             type="email"
-//             name="email"
-//             value={form.email}
-//             onChange={handleChange}
-//             placeholder="Email"
-//           />
-
-//           <button className="btn-primary" onClick={handleUpdate}>
-//             Update Profile
-//           </button>
-
-//           <hr />
-
-//           <h3>Change Password</h3>
-
-//           <input type="password" placeholder="Old Password" />
-//           <input type="password" placeholder="New Password" />
-
-//           <button className="btn-danger">
-//             Update Password
-//           </button>
-
-//         </div>
-
-//       </div>
-//     </Layout>
-//   );
-// }
 import { useEffect, useState } from "react";
 import Layout from "../components/Layout";
 import { getProfile, updateProfile } from "../services/Api";
@@ -97,22 +16,6 @@ export default function Profile() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  // const handleSubmit = async () => {
-  //   try {
-  //     const userId = localStorage.getItem("userId"); // or from auth
-
-  //     const res = await updateProfile({
-  //       userId,
-  //      ...form,
-  //     });
-
-  //     alert("Profile updated successfully");
-
-  //   } catch (err) {
-  //     console.error(err);
-  //     alert("Update failed");
-  //   }
-  // };
   const handleSubmit = async () => {
   try {
     const userId = localStorage.getItem("userId");
@@ -182,16 +85,6 @@ const fetchProfile = async () => {
         
         <h2 className="text-xl font-bold mb-4">Edit Profile</h2>
 
-       {/* <input
-  type="text"
-  name="name"
-  placeholder="Name"
-  value={form.name}
-  onChange={(e) =>
-    setForm({ ...form, name: e.target.value })
-  }
-  className="w-full border p-2 mb-3"
-/> */}
       <div className="form">
        <input 
   type="email"
