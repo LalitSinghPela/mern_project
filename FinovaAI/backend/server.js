@@ -34,7 +34,7 @@ app.use("/api/ai", require("./routes/ai"));
 
 app.use("/api/user", require("./routes/user"));
 
-
+// app.listen(5000, () => console.log("Server running"));
 app.listen(PORT, () => {
   console.log(`Server running on ${PORT}`);
 });
