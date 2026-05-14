@@ -39,26 +39,59 @@ router.post("/signup", async (req, res) => {
 
     console.log(error);
 
-    res.status(500).json({
-      message: "Signup failed",
-    });
+res.status(500).json({
+  message: error.message,
+});
   }
 });
 router.post("/login", async (req, res) => {
-  const user = await User.findOne({ email: req.body.email });
-  const valid = await bcrypt.compare(req.body.password, user.password);
-  if (!valid) return res.status(400).send("Invalid credentials");
 
-  const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET);
-  // res.json({ token });
-  res.json({
-  token,
-  user: {
-    _id: user._id,
-    name: user.name || "",
-    email: user.email,
-  },
-});
+  try {
+
+    const user = await User.findOne({
+      email: req.body.email
+    });
+
+    if (!user) {
+      return res.status(400).json({
+        message: "User not found",
+      });
+    }
+
+    const valid = await bcrypt.compare(
+      req.body.password,
+      user.password
+    );
+
+    if (!valid) {
+      return res.status(400).json({
+        message: "Invalid credentials",
+      });
+    }
+
+    const token = jwt.sign(
+      { id: user._id },
+      process.env.JWT_SECRET
+    );
+
+    res.json({
+      token,
+      user: {
+        _id: user._id,
+        name: user.name || "",
+        email: user.email,
+      },
+    });
+
+  } catch (error) {
+
+    console.log(error);
+
+    res.status(500).json({
+      message: error.message,
+    });
+
+  }
 });
 
 
