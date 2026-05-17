@@ -1,0 +1,23 @@
+# Dependency directories
+**/node_modules/
+
+# Environment variables (Crucial for security)
+**/.env
+
+# Build folders
+client/build/
+client/dist/
+server/dist/    
+dist/           
+
+# Database/Local storage
+*.local.db
+*.sqlite
+
+# Debug logs
+**/npm-debug.log*
+**/yarn-error.log*
+
+# OS specific files
+.DS_Store
+Thumbs.db
