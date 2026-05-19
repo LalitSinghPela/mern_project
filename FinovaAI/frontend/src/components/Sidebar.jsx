@@ -17,7 +17,22 @@ export default function Sidebar({ isMobile, open, setOpen }) {
         <li className="sidebar-style"><Link to="/income" onClick={() => setOpen(false)}>Income</Link></li>
         <li className="sidebar-style"><Link to="/chat" onClick={() => setOpen(false)}>AI Chat</Link></li>
         <li className="sidebar-style"><Link to="/profile" onClick={() => setOpen(false)}>Profile</Link></li>
-        <li className="sidebar-style"><Link to="/" onClick={() => setOpen(false)}>Logout</Link></li>
+        {/* <li className="sidebar-style"><Link to="/" onClick={() => setOpen(false)}>Logout</Link></li> */}
+        <li className="sidebar-style">
+  <Link
+    to="/login"
+    onClick={() => {
+
+      localStorage.removeItem("token");
+      localStorage.removeItem("userId");
+      localStorage.removeItem("user");
+
+      setOpen(false);
+    }}
+  >
+    Logout
+  </Link>
+</li>
       </ul>
     </div>
   );

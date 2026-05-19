@@ -14,6 +14,8 @@ import Profile from "./pages/Profile";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Navbar from "./components/Navbar";
 
+
+
 function Layout() {
   const location = useLocation();
 
@@ -34,6 +36,7 @@ function Layout() {
         <Route path="/dashboard" element={
           <ProtectedRoute><Dashboard/></ProtectedRoute>
         }/>
+        
 
         <Route path="/expenses" element={
           <ProtectedRoute><Expenses/></ProtectedRoute>
