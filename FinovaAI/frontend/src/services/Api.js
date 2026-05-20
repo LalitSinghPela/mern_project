@@ -3,7 +3,7 @@
 import axios from "axios";
 
 export const API = axios.create({
-baseURL: import.meta.env.VITE_API_URL,
+baseURL: "https://finova-1a51.onrender.com/api",
  withCredentials: true
 
 });
