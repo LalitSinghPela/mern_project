@@ -1,0 +1,50 @@
+.dashContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 98vh;
+    background-color: #e0f5e0;
+    margin-left: 50vh;
+    justify-content: center;
+}
+
+.dashForm {
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+     margin-left: 139px;
+    
+}
+.title3{
+    margin-left:250px;
+}
+
+.totalresult {
+    display: flex;
+    background-color: #e0f5e0;
+    margin-top: 20px;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    border: 2px solid #637877;
+    width: 50vh;
+    margin-left: 49vh;
+}
+
+.dashResult {
+    background-color: #e0f5e0;
+    margin-top: 20px;
+    width: 150vh;
+    margin-left: 22vh;
+}
+
+.todo-list {
+    margin-left: 80vh;
+}
+
+li {
+    border: 2px solid black;
+    padding: 2px;
+}

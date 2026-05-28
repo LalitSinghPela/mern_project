@@ -1,0 +1,19 @@
+.registerContainer{
+    background-color: #e0f5e0;
+    height: 50vh;
+    width: 100vh;
+    margin-top: 8vh;
+    margin-left: 55vh;
+    display: flex;
+    justify-content: center;
+}
+.registerForm {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50vh;
+   
+}
+.title1{
+    margin-left: 105px;
+}
