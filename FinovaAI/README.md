@@ -14,8 +14,6 @@ Users can:
 * Categorize transactions
 * View financial insights
 * Chat with an AI financial assistant
-
-
 ---
 
 ## 🏗️ Project Structure
